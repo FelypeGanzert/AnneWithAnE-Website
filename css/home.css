@@ -1,0 +1,165 @@
+
+/* Section Main */
+section#main{
+    padding: 200px 0px;
+    background: url('../img/anne1.jpg') no-repeat center center /cover;
+    height: 600px;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* Why Watch */
+section#why-watch {
+    text-align: center;
+    height: 500px;
+    background: #ff781f;
+    color: white;
+}
+section#why-watch div{
+    width: 50%;
+    float: left;
+    padding: 100px 30px;
+}
+section#why-watch .image-content{
+    min-height: 100%;
+    background: url('../img/anne2.jpg') no-repeat right top /cover ;
+}
+section#why-watch div h2{
+    font-size: 2em;
+}
+section#why-watch p{
+    text-align: left;
+}
+
+
+/* Main Characters */
+#main-characters{
+    padding: 20px 0px;
+    background: #b93d0c;
+    overflow: auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+#main-characters a{
+    margin-top: 15px;
+}
+#main-characters div.character{
+    width: 33.333%;
+    height: 250px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+#main-characters div.character img{
+    align-self: center;
+    min-height: 100%;
+    width: 100%;
+}
+#main-characters div.character span.name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 30%;
+    font-size: 1.5em;
+    background: #ff6600;
+    text-shadow: black 2px 2px 2px;
+    height: 0;
+    width: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    transition: 0.5s;
+}
+div.character:hover span.name{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* Seasons*/
+section#seasons{
+    width: 100%;
+}
+section#seasons .season-group {
+    height: 350px;
+    text-align: center;
+    background: #ff781f;
+    color: white;
+    overflow: auto;
+}
+section#seasons  .season-group div{
+    width: 50%;
+    float: left;
+    padding: 50px 20px;
+    min-height: 100%;
+}
+section#seasons  .season-group div p{
+    text-align: left;
+}
+section#seasons  .season-group #season1{
+    min-height: 100%;
+    background: url('../img/season1.jpg') no-repeat center top /cover ;
+}
+section#seasons  .season-group #season2{
+    min-height: 100%;
+    background: url('../img/season2.jpg') no-repeat center top /cover ;
+}
+section#seasons  .season-group #season3{
+    min-height: 100%;
+    background: url('../img/season3.png') no-repeat center center /cover ;
+}
+section#seasons  .season-group div h2{
+    font-size: 2em;
+}
+
+
+/* Responsive Layout */
+
+@media(max-width: 800px) {
+
+    section#main{
+        font-size: 25px;
+    }
+    /* Why Watch */
+    section#why-watch {
+        height: auto;
+        overflow: auto;
+    }
+    section#why-watch div{
+        width: 100%;
+        clear: both;
+        padding: 30px 20px;
+    }
+    section#why-watch .image-content{
+        height: 300px;
+    }
+    
+
+    /*  Main CHaracters */
+    #main-characters div.character{
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        clear: both;
+    }
+    #main-characters div.character span.name{
+        padding-top: 20%;
+    }
+
+    /* Seasons */
+    section#seasons .season-group {
+        height: auto;
+    }
+    section#seasons  .season-group div{
+        width: 100%;
+        clear: both;
+        padding: 30px 10px;
+    }
+    #season1, #season2, #season3{
+      display: none;
+    }
+}

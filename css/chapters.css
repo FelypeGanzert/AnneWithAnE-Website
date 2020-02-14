@@ -1,0 +1,33 @@
+#seasons div{
+    padding: 60px 20px;
+    height: 500px;
+    color: white
+}
+#seasons div p, #seasons div h3{
+    max-width: 960px;
+    margin: auto;
+}
+#seasons div h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#season1{
+    background: url('../img/season1-details.jpg') no-repeat center center /cover;
+}
+#season2{
+    background: url('../img/season2-details.jpg') no-repeat center center /cover;
+}
+#season3{
+    background: url('../img/season3-details.jpg') no-repeat center center /cover;
+}
+
+@media(max-width: 850px){
+    #seasons div{
+        height: auto;
+        color: white;
+        overflow: auto;
+    }
+    #season3{
+        background: url('../img/season3-details.jpg') no-repeat 70% center /cover;
+    }
+}
