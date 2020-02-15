@@ -20,6 +20,9 @@
 #season3{
     background: url('../img/season3-details.jpg') no-repeat center center /cover;
 }
+#seasons div p{
+    margin-bottom: 10px;
+}
 
 @media(max-width: 850px){
     #seasons div{
